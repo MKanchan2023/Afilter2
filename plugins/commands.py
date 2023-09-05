@@ -288,7 +288,7 @@ async def start(client, message):
                       InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/god_luffy_ati")
+                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="tg://settings")
                      ]
                     ]
                 )
@@ -342,7 +342,7 @@ async def start(client, message):
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/god_luffy_ati")
+              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="tg://settings")
              ]
             ]
         )
@@ -727,7 +727,7 @@ async def requests(bot, message):
         mention = message.from_user.mention
         success = True
         content = message.text
-        keywords = ["#request", "/request", "#Request", "/Request"]
+        keywords = ["#request", "/request", "#Request", "/Request", "/req", "#req", "/Req", "#Req"]
         for keyword in keywords:
             if keyword in content:
                 content = content.replace(keyword, "")
